@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html><head>
+<title>Sales Report</title>
+
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+
+</head>
+<body>
+<center>
+<font size="5"><b>KTP - Sales Report by Buyer</b></font>
+</center>
+<br>
+<hr>
+<form action="RW_REPORT_BUYER" method="POST">
+Please Enter:
+<br>
+Start Date
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+End Date
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Select the Buyer
+<br>
+<input maxlength="10" value="MM/DD/YYYY" size="12" name="SDATE" type="TEXT">
+<input maxlength="10" value="MM/DD/YYYY" size="12" name="EDATE" type="TEXT">
+<select name="BUYERNAME">
+<option value="BENDEZU,TABATHA">BENDEZU,TABATHA (5494)
+</option><option value="BROADRICK,KRISTIN">BROADRICK,KRISTIN (KGB)
+</option><option value="Cox,Robin">Cox,Robin (5343)
+</option><option value="DRAPER,JEAN">DRAPER,JEAN (JMD)
+</option><option value="HALL,BECKY">HALL,BECKY (RMH)
+</option><option value="HURST,BRYAN">HURST,BRYAN (BH)
+</option><option value="KEIM,FOX">KEIM,FOX (FOX)
+</option><option value="LABBE,DAVID">LABBE,DAVID (DML)
+</option><option value="LITTLEY,GARY">LITTLEY,GARY (GJL)
+</option><option value="Mason,Susan">Mason,Susan (SO)
+</option><option value="McKinley,Lisa">McKinley,Lisa (LMC)
+</option><option value="MICHNIEWICZ,DAVID">MICHNIEWICZ,DAVID (DAM)
+</option><option value="MORRILL,JON">MORRILL,JON (JDM)
+</option></select>
+<input type="CHECKBOX" name="SELWEB" value="YES">
+Include Web Sales
+<input type="CHECKBOX" name="SELAPID" value="YES">
+Include <b>A</b>cive/<b>I</b>nactive PIDs
+<input type="CHECKBOX" name="CREATE.XLS" value="YES">
+Export to Text for Excel Import
+<br>
+<br>
+How many SKUs would you like to see?
+<br>
+The default is <b>ALL:</b> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input maxlength="4" value="ALL" size="6" name="SRTTOTAL" type="TEXT">
+<br>
+<br>
+Filter by Vendor Number? 
+<input type="CHECKBOX" name="SELVEND" value="YES">
+<input maxlength="4" value="VND NO" size="6" name="VENDORNO" type="TEXT">
+<a href="http://172.18.44.241/servlet/reality/class/RW_REPORT_VENDOR_LIST">Current Vendor Listing</a>
+<br>
+<br>
+Filter by Class Code? 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="CHECKBOX" name="SELCLASS" value="YES">
+<input maxlength="4" value="CLASS" size="6" name="CLASSCODE" type="TEXT">
+<a href="http://172.18.44.241/servlet/reality/class/RW_REPORT_CLASS_LIST">Current Class Listing</a>
+<br>
+<br>
+Would you like to sort by:
+<br>
+<input type="RADIO" name="TSORT" value="C">
+Class
+<input type="RADIO" name="TSORT" value="D">
+Dollars
+<input type="RADIO" name="TSORT" value="Q" checked="">
+Quantity 
+<input type="RADIO" name="TSORT" value="S">
+SKU 
+<input type="RADIO" name="TSORT" value="V">
+Vendor No. 
+<br>
+<br>
+<b>Show in:</b> 
+<input type="RADIO" name="SORDER" value="AR">
+Ascending Order 
+<input type="RADIO" name="SORDER" value="DR" checked="">
+Descending Order 
+<br>
+<br>
+Click the <b>Run The Report</b> button when finished 
+<input type="submit" value="Run Report">
+</form>
+<hr>
+<p>
+<b>*</b> Large numbers of SKUs will cause the program to run slowly.  
+If the program times out please narrow your selection criteria.
+</p>
+<p>
+<b>**</b> If you want the <b><i>Current Vendor Listing</i></b> or the <b><i>Current Class Listing</i></b> to open in a new tab,
+<b>RIGHT-CLICK</b> the link and choose Open in New Tab.
+</p>
+<p>
+<b>***</b> This program has been modified for faster processing.
+</p>
+
+
+</body></html>
