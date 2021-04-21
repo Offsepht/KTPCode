@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>CSI ON HAND LOOKUP</TITLE>
+
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+
+
+</HEAD>
+<BODY>
+<CENTER>
+<FONT SIZE="5"><b>KTP - CSI ONHAND LOOKUP</b></FONT>
+</CENTER>
+<BR>
+<HR>
+<FORM TARGET="BOTTOM" ACTION="RW_CSI_ONHAND" METHOD="POST">
+Search By:&nbsp&nbsp&nbsp&nbsp
+<INPUT TYPE=RADIO NAME="SEARCH.SEL" VALUE="SN">
+Style Number&nbsp&nbsp
+<INPUT TYPE=RADIO NAME="SEARCH.SEL" VALUE="V" CHECKED>
+<A HREF="http://ktp-mgmt01/servlet/reality/class/RW_REPORT_VENDOR_LIST" TARGET="BOTTOM">Vendor Number</A>&nbsp&nbsp
+<INPUT TYPE=RADIO NAME="SEARCH.SEL" VALUE="VN">
+Vendor Name&nbsp&nbsp
+<BR>
+<INPUT MAXLENGTH="40" SIZE="45" NAME="FIND.PROD" TYPE="TEXT">
+<INPUT TYPE="submit" VALUE="Run Search">
+</FORM>
+</BODY>
+</HTML>
